@@ -1,0 +1,20 @@
+<select id="search-sort">
+  <option selected disabled>Sort by</option>
+  <option value="title-descending">Title descending (Z-A)</option>
+  <option value="title-ascending">Title ascending (A-Z)</option>
+  <option value="price-lowest">Price lowest</option>
+  <option value="price-highest">Price highest</option>
+  <option value="price-range">Price range</option>
+</select>
+
+<div  class="price-range-container hide">
+  <div>
+    <label>Min range:</label>
+    <input type="number" value="1" id="min-range"/>
+  </div>
+  <div>
+    <label>Max range:</label>
+    <input type="number" value="20" id="max-range"/>
+  </div>
+  <a class="btn" href="#" id="sort_apply">Apply</a>
+</div>
