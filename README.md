@@ -5,6 +5,12 @@ A script that enables sorting or filtering search results in Shopify based on pr
 ## Prerequisites
 The script uses <a href="https://jquery.com/">jQuery</a> and <a href="https://github.com/js-cookie/js-cookie">JavaScript Cookies</a>
 
+So make sure to include them in the theme.liquid file
+```html
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+```
+
 # Installing:
 
 <ol>
