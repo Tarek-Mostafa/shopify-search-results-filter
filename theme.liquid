@@ -1,15 +1,17 @@
-{{ 'search-sort.js' | asset_url | script_tag }}
-<script>
-  $(document).ready(function() {
-    var options = {
-      container: ".grid-uniform", 		// Search results container
-      grid_container: ".custom-grid", 	// Grid container
-      title_wrapper: ".custom-title",	// Title wrapper
-      price_wrapper: ".money .visually-hidden", // Price wrapper,
-      range_wrapper: ".price-range-container", // Price range container
-      range_submit: "#sort_apply"			   // Submit button
-    };
+{% if template contains "search" %}
+  {{ 'search-sort.js' | asset_url | script_tag }}
+  <script>
+    $(document).ready(function() {
+      var options = {
+        container: ".grid-uniform", 		// Search results container
+        grid_container: ".custom-grid", 	// Grid container
+        title_wrapper: ".custom-title",	// Title wrapper
+        price_wrapper: ".money .visually-hidden", // Price wrapper,
+        range_wrapper: ".price-range-container", // Price range container
+        range_submit: "#sort_apply"			   // Submit button
+      };
 
-    $("#search-sort").search_sort(options);
-  });
-</script>
+      $("#search-sort").search_sort(options);
+    });
+  </script>
+{%endif%}
