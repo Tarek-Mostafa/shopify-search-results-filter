@@ -16,3 +16,14 @@ The script uses <a href="https://jquery.com/">jQuery</a> and <a href="https://gi
   <li>Copy <a href="https://github.com/Tarek-Mostafa/shopify-search-results-filter/blob/master/template.html">this HTML code</a>  to your <code>search.liquid</code> template or <code>search-template.liquid</code> section</li>
   <li>Copy <a href="https://github.com/Tarek-Mostafa/shopify-search-results-filter/blob/master/theme.liquid">this code</a> to your <code>theme.liquid</code> before the < /body> </li>
 </ol>
+
+# Options:
+
+<ol>
+  <li>(Required) <code>container</code> this will represents the search results container class.</li>
+  <li>(Required) <code>grid_container</code> this will represents the grid class.</li>
+  <li>(Required) <code>title_wrapper</code> this will represents the product title class.</li>
+  <li>(Required) <code>price_wrapper</code> this will represents the price class.</li>
+  <li>(Optional) <code>range_wrapper</code> this will represents the price range wrapper class.</li>
+  <li>(Optional) <code>range_submit</code> this will represents the price range submit button class.</li>
+</ol>
